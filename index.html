@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightcyan;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0 0 20px 0;
+            color: #333;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #city-name {
+            margin: 10px 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        #temperature {
+            margin: 10px 0;
+            font-size: 20px;
+            color: #555;
+        }
+
+        #description {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather app</h1>
+        <div>
+            <input type="text" id="search" placeholder="Enter city name" />
+            <button id="submit">Submit</button>
+        </div>
+        <div class="result">
+            <h1 id="city-name"></h1>
+            <h3 id="temperature"></h3>
+            <p id="description"></p>
+        </div>
+    </div>
+</body>
+
+</html>
